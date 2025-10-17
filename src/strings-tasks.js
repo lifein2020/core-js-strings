@@ -22,7 +22,6 @@
 function getStringLength(value) {
   return typeof value !== 'string' ? 0 : value.length;
 }
-// getStringLength('Hello');
 
 /**
  * Returns true if the value is a string, otherwise returns false.
@@ -42,12 +41,6 @@ function getStringLength(value) {
 function isString(value) {
   return value instanceof String || typeof value === 'string';
 }
-// isString('test');
-// isString();
-// isString(null);
-// isString([]);
-// isString({});
-// isString('test');
 
 /**
  * Returns the result of concatenation of two strings.
@@ -94,8 +87,8 @@ function getFirstChar(value) {
  *   removeLeadingAndTrailingWhitespaces('cat ') => 'cat'
  *   removeLeadingAndTrailingWhitespaces('\t\t\tHello, World! ') => 'Hello, World!'
  */
-function removeLeadingAndTrailingWhitespaces(/* value */) {
-  throw new Error('Not implemented');
+function removeLeadingAndTrailingWhitespaces(value) {
+  return value.trim();
 }
 
 /**
